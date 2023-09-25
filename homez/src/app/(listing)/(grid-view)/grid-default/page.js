@@ -1,6 +1,6 @@
-import DefaultHeader from "@/components/common/DefaultHeader";
-import Footer from "@/components/common/default-footer";
+import Footer from "@/components/home/home-v5/footer";
 import MobileMenu from "@/components/common/mobile-menu";
+import Header from "@/components/home/home-v5/Header";
 
 import React from "react";
 import PropertyFiltering from "@/components/listing/grid-view/grid-default/PropertyFiltering";
@@ -13,7 +13,7 @@ const GridDefault = () => {
   return (
     <>
       {/* Main Header Nav */}
-      <DefaultHeader />
+      <Header />
       {/* End Main Header Nav */}
 
       {/* Mobile Nav  */}
