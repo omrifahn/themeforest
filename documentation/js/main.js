@@ -48,8 +48,8 @@
 					$(".sticky-nav-doc .body_fixed").removeClass("body_navbar_fixed");
 				}
 			});
-		};
-	};
+		}
+	}
 	navbarFixed();
 
 	function navbarFixedTwo() {
@@ -62,8 +62,8 @@
 					$("#stickyTwo").removeClass("navbar_fixed");
 				}
 			});
-		};
-	};
+		}
+	}
 	navbarFixedTwo();
 
 	//*=============menu sticky js =============*//
@@ -302,8 +302,8 @@
 				delay: 1,
 				time: 250
 			});
-		};
-	};
+		}
+	}
 
 	counterUp();
 
@@ -733,7 +733,7 @@
         if ( e.keyCode === 191 ) {
             e.preventDefault();
             $('input[type=search]').focus();
-            return;
+
         }
     });
 
@@ -807,7 +807,7 @@
 						} else {
 							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
 							$target.focus(); // Set focus again
-						};
+						}
 					});
 				}
 			}

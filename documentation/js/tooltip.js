@@ -31,13 +31,13 @@
         // add event listeners
         tooltipObj.element.addEventListener('mouseenter', handleEvent.bind(tooltipObj));
         tooltipObj.element.addEventListener('focus', handleEvent.bind(tooltipObj));
-    };
+    }
 
     function removeTooltipEvents(tooltipObj) {
         // remove event listeners
         tooltipObj.element.removeEventListener('mouseleave',  handleEvent.bind(tooltipObj));
         tooltipObj.element.removeEventListener('blur',  handleEvent.bind(tooltipObj));
-    };
+    }
 
     function handleEvent(event) {
         // handle events
@@ -51,7 +51,7 @@
                 checkTooltip(this);
                 break;
         }
-    };
+    }
 
     function showTooltip(tooltipObj, event) {
         // tooltip has already been triggered
@@ -64,7 +64,7 @@
         tooltipObj.tooltipIntervalId = setTimeout(function(){
             createTooltip(tooltipObj);
         }, tooltipObj.tooltipDelay);
-    };
+    }
 
     function createTooltip(tooltipObj) {
         tooltipObj.tooltip = document.getElementById(tooltipObj.tooltipId);
@@ -94,7 +94,7 @@
             tooltipObj.tooltip.removeEventListener('mouseenter', cb);
             tooltipLeaveEvent(tooltipObj);
         });
-    };
+    }
 
     function tooltipLeaveEvent(tooltipObj) {
         tooltipObj.tooltip.addEventListener('mouseleave', function cb(){
@@ -102,7 +102,7 @@
             tooltipObj.tooltip.removeEventListener('mouseleave', cb);
             hideTooltip(tooltipObj);
         });
-    };
+    }
 
     function placeTooltip(tooltipObj) {
         // set top and left position of the tooltip according to the data-tooltip-position attr of the trigger
@@ -129,7 +129,7 @@
         tooltipObj.tooltip.style.top = position[direction][0]+'px';
         tooltipObj.tooltip.style.left = position[direction][1]+'px';
         Util.addClass(tooltipObj.tooltip, 'tooltip--'+direction);
-    };
+    }
 
     function checkTooltip(tooltipObj) {
         tooltipObj.tooltipTriggerHover = false;
@@ -142,7 +142,7 @@
                 tooltipObj.tooltipHoverInterval = false;
             }, 300);
         }
-    };
+    }
 
     function hideTooltip(tooltipObj) {
         if(tooltipObj.tooltipHover || tooltipObj.tooltipTriggerHover) return;
@@ -157,12 +157,12 @@
         removeTooltip(tooltipObj);
         // remove events
         removeTooltipEvents(tooltipObj);
-    };
+    }
 
     function removeTooltip(tooltipObj) {
         Util.addClass(tooltipObj.tooltip, 'tooltip--is-hidden');
         if(tooltipObj.tooltipDescription) tooltipObj.element.removeAttribute('aria-describedby');
-    };
+    }
 
     window.Tooltip = Tooltip;
 
