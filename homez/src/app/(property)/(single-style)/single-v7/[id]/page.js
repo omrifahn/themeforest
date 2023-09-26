@@ -29,7 +29,17 @@ const SingleV7 = ({ params }) => {
       <section className="pt60 pb0 bgc-dark">
         <div className="container">
           <div className="row">
-            <PropertyHeader id={params.id} />
+          <PropertyHeader
+              // TODO - fill values
+            // id={someId}
+            // title={someTitle}
+            // location={someLocation}
+            // status={someStatus}
+            // timeAgo={someTimeAgo}
+            // viewCount={someViewCount}
+            // price={somePrice}
+            // sqft={someSqft}
+          />
           </div>
           {/* End .row */}
 
