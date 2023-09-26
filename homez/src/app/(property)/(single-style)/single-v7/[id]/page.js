@@ -10,7 +10,6 @@ import PropertyGallery from "@/components/property/property-single-style/single-
 import React from "react";
 import OverView from "@/components/property/property-single-style/single-v7/OverView";
 
-
 export const metadata = {
   title: "Property Single V7 || Homez - Real Estate NextJS Template",
 };
