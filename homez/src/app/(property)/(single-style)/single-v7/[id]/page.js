@@ -44,12 +44,26 @@ const SingleV7 = ({ params }) => {
           {/* End .row */}
 
           <div className="row  mt30">
-            <PropertyGallery id={params.id} />
+          <PropertyGallery
+              // TODO - fill values
+            // id={123}
+            // imageUrl={""}
+            // imageWidth={1220}
+            // imageHeight={520}
+          />
           </div>
           {/* End .row */}
 
           <div className="row mt30">
-            <OverView id={params.id} />
+          <OverView
+              // TODO - fill values
+            // bed={someBedData}
+            // bath={someBathData}
+            // yearBuilding={someYearBuildingData}
+            // garage={someGarageData}
+            // sqft={someSqftData}
+            // propertyType={somePropertyTypeData}
+          />
           </div>
           {/* End .row */}
         </div>
