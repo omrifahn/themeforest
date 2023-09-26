@@ -14,6 +14,7 @@ export const metadata = {
   title: "Property Single V7 || Homez - Real Estate NextJS Template",
 };
 
+// TODO - 1. based on the param.id, fetch the property data from the json file
 const SingleV7 = ({ params }) => {
   return (
     <>
@@ -77,12 +78,16 @@ const SingleV7 = ({ params }) => {
             <div className="col-lg-8">
               <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30">Property Description</h4>
-                <ProperytyDescriptions />
+                <ProperytyDescriptions
+              // TODO - fill values
+                />
                 {/* End property description */}
 
                 <h4 className="title fz17 mb30 mt50">Property Details</h4>
                 <div className="row">
-                  <PropertyDetails />
+                  <PropertyDetails
+              // TODO - fill values
+                  />
                 </div>
               </div>
               {/* End .ps-widget */}
@@ -90,7 +95,9 @@ const SingleV7 = ({ params }) => {
               <div className="ps-widget bgc-white bdrs12 default-box-shadow2 p30 mb30 overflow-hidden position-relative">
                 <h4 className="title fz17 mb30 mt30">Address</h4>
                 <div className="row">
-                  <PropertyAddress />
+                  <PropertyAddress
+              // TODO - fill values
+                  />
                 </div>
               </div>
               {/* End .ps-widget */}
