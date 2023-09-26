@@ -2,7 +2,7 @@ module.exports = [
   {
 
     id: 1,
-    image: "/images/listings/g1-1.jpg",
+    image: "https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/384332643_10162138598689009_8283510746015147210_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=4c1e7d&_nc_ohc=9uUwjOHIX1MAX_Utf_s&_nc_ht=scontent-lhr8-1.xx&edm=AFuVL-cEAAAA&oh=00_AfALACjVgzC9GeXGoX8GZcu25G0V1quB2bwrmQY6Wyunbw&oe=6518A117",
     title: "Equestrian Family Home",
     city:'New York',location: "New York City, CA, USA",
     bed: "1",
