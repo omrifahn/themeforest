@@ -4,7 +4,10 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['scontent-lhr8-1.xx.fbcdn.net'],
+    domains: [
+      'scontent-lhr8-1.xx.fbcdn.net',
+      'scontent-lhr8-2.xx.fbcdn.net',
+    ],
   },
 };
 
