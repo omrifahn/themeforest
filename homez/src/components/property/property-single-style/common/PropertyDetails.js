@@ -1,53 +1,27 @@
 import React from "react";
 
-const PropertyDetails = () => {
-  const columns = [
-    [
-      {
-        label: "Property ID",
-        value: "RT48",
-      },
-      {
-        label: "Price",
-        value: "$252,000",
-      },
-      {
-        label: "Property Size",
-        value: "1500 Sq Ft",
-      },
-      {
-        label: "Bathrooms",
-        value: "3",
-      },
-      {
-        label: "Bedrooms",
-        value: "2",
-      },
-    ],
-    [
-      {
-        label: "Garage",
-        value: "2",
-      },
-      {
-        label: "Garage Size",
-        value: "200 SqFt",
-      },
-      {
-        label: "Year Built",
-        value: "2022",
-      },
-      {
-        label: "Property Type",
-        value: "Apartment",
-      },
-      {
-        label: "Property Status",
-        value: "For Sale",
-      },
-    ],
-  ];
-
+const PropertyDetails = ({ columns = [
+  [
+    {
+      label: "Property ID",
+      value: "Default ID",
+    },
+    {
+      label: "Price",
+      value: "Default Price",
+    },
+  ],
+  [
+    {
+      label: "Property ID2",
+      value: "Default ID2",
+    },
+    {
+      label: "Price2",
+      value: "Default Price2",
+    },
+  ],
+] }) => {
   return (
     <div className="row">
       {columns.map((column, columnIndex) => (
